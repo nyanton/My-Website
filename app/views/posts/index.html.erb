@@ -20,6 +20,9 @@
         <tr>
           <td id="content"><%= simple_format(post.content) %></td>
         </tr>
+        <tr>
+          <td> <%= image_tag(post.image.to_s) if post.image? %></td>
+        </tr>
       <% end %>
     </tbody>
   </table>
